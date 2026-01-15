@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=controle_residencial'
+      - 'POSTGRES_PASSWORD=${DB_PASSWORD}'
+      - 'POSTGRES_USER=${DB_USER}'
+    ports:
+      - '5432:5432'
